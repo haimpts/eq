@@ -1,0 +1,74 @@
+﻿@model SampleDataModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SampleDataModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Summary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Summary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCleared)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCleared)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClearedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClearedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
